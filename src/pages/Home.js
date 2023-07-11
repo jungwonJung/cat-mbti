@@ -39,14 +39,16 @@ const Home = () => {
             transition: "background-color 0.3s ease",
           }}
           onClick={handleClickButton}
-          onMouseEnter={(e) => (
-            (e.target.style.backgroundColor = "#FF7079"),
-            (e.target.style.color = "black")
-          )}
-          onMouseLeave={(e) => (
-            (e.target.style.backgroundColor = "#FF9494"),
-            (e.target.style.color = "white")
-          )}
+          onMouseEnter={(e) =>
+            (e.target.style.backgroundColor = "#FF7079")(
+              (e.target.style.color = "black")
+            )
+          }
+          onMouseLeave={(e) =>
+            (e.target.style.backgroundColor = "#FF9494")(
+              (e.target.style.color = "white")
+            )
+          }
         >
           🐈 Start Test!! 🐈
         </Button>

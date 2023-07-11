@@ -45,14 +45,16 @@ const Result = () => {
             transition: "background-color 0.3s ease",
           }}
           onClick={() => navigate("/")}
-          onMouseEnter={(e) => (
-            (e.target.style.backgroundColor = "#FF7079"),
-            (e.target.style.color = "black")
-          )}
-          onMouseLeave={(e) => (
-            (e.target.style.backgroundColor = "#FF9494"),
-            (e.target.style.color = "white")
-          )}
+          onMouseEnter={(e) =>
+            (e.target.style.backgroundColor = "#FF7079")(
+              (e.target.style.color = "black")
+            )
+          }
+          onMouseLeave={(e) =>
+            (e.target.style.backgroundColor = "#FF9494")(
+              (e.target.style.color = "white")
+            )
+          }
         >
           🐈 Do it Again Test 🐈
         </Button>
