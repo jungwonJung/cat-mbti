@@ -26,32 +26,9 @@ const Home = () => {
           />
         </LogoImage>
         <Desc>Find a cat that suits my personality based on the MBTI test</Desc>
-        <Button
-          style={{
-            width: "19%",
-            height: 60,
-            fontSize: "2rem",
-            textAlign: "center",
-            marginTop: "20px",
-            backgroundColor: "#FF9494",
-            border: "none",
-            cursor: "pointer",
-            transition: "background-color 0.3s ease",
-          }}
-          onClick={handleClickButton}
-          onMouseEnter={(e) =>
-            (e.target.style.backgroundColor = "#FF7079")(
-              (e.target.style.color = "black")
-            )
-          }
-          onMouseLeave={(e) =>
-            (e.target.style.backgroundColor = "#FF9494")(
-              (e.target.style.color = "white")
-            )
-          }
-        >
+        <StyledButton onClick={handleClickButton}>
           🐈 Start Test!! 🐈
-        </Button>
+        </StyledButton>
       </Contents>
     </Wrapper>
   );
@@ -65,6 +42,10 @@ const Wrapper = styled.div`
   font-family: "Amatic SC";
   font-weight: 400;
   background-color: #fff5e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 `;
 
 const Contents = styled.div`
@@ -80,18 +61,80 @@ const Header = styled.div`
   justify-content: center;
   align-items: center;
   font-weight: 700;
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 2rem;
+  }
 `;
 
 const Title = styled.div`
   font-size: 2.5rem;
   margin-top: 40px;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.9rem;
+    font-weight: 700;
+  }
 `;
 
 const LogoImage = styled.div`
   margin-top: 10px;
+
+  img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+  }
 `;
 
 const Desc = styled.div`
   font-size: 2.5rem;
   margin-top: 20px;
+  @media (max-width: 768px) {
+    font-size: 1.8rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 1.3rem;
+  }
+`;
+
+const StyledButton = styled(Button)`
+  width: 60%;
+  max-width: 400px;
+  height: 60px;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 20px;
+  background-color: #ff9494;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #ff7079;
+    color: black;
+  }
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
+
+  @media (max-width: 480px) {
+    width: 90%;
+    font-size: 1.6rem;
+  }
 `;

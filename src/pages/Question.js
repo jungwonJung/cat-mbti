@@ -62,61 +62,21 @@ const Question = () => {
       />
       <Title>{QuestionData[questionNo].title}</Title>
       <ButtonGroup>
-        <Button
-          style={{
-            width: "40%",
-            minHeight: "200px",
-            fontSize: "2.5rem",
-            textAlign: "center",
-            backgroundColor: "#FF9494",
-            border: "none",
-            cursor: "pointer",
-            transition: "background-color 0.3s ease",
-          }}
+        <StyledButton
           onClick={() => handleClickButton(1, QuestionData[questionNo].type)}
-          onMouseEnter={(e) =>
-            (e.target.style.backgroundColor = "#FF7079")(
-              (e.target.style.color = "black")
-            )
-          }
-          onMouseLeave={(e) =>
-            (e.target.style.backgroundColor = "#FF9494")(
-              (e.target.style.color = "white")
-            )
-          }
         >
           {QuestionData[questionNo].answerA}
-        </Button>
-        <Button
-          style={{
-            width: "40%",
-            minHeight: "200px",
-            fontSize: "2.5rem",
-            textAlign: "center",
-            marginLeft: "20px",
-            backgroundColor: "#FF9494",
-            border: "none",
-            cursor: "pointer",
-            transition: "background-color 0.3s ease",
-          }}
+        </StyledButton>
+        <StyledButton
           onClick={() => handleClickButton(0, QuestionData[questionNo].type)}
-          onMouseEnter={(e) =>
-            (e.target.style.backgroundColor = "#FF7079")(
-              (e.target.style.color = "black")
-            )
-          }
-          onMouseLeave={(e) =>
-            (e.target.style.backgroundColor = "#FF9494")(
-              (e.target.style.color = "white")
-            )
-          }
         >
           {QuestionData[questionNo].answerB}
-        </Button>
+        </StyledButton>
       </ButtonGroup>
     </Wrapper>
   );
 };
+
 export default Question;
 
 const Wrapper = styled.div`
@@ -131,6 +91,13 @@ const Title = styled.div`
   font-size: 3rem;
   text-align: center;
   margin-top: 50px;
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 2rem;
+  }
 `;
 
 const ButtonGroup = styled.div`
@@ -139,4 +106,30 @@ const ButtonGroup = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: 50px;
+`;
+
+const StyledButton = styled(Button)`
+  width: 40%;
+  min-height: 200px;
+  height: 330px;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-left: 20px;
+  background-color: #ff9494;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #ff7079;
+    color: black;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.3rem;
+  }
 `;
