@@ -12,7 +12,7 @@ This project is a survey-based recommendation service that suggests cat breeds b
 
 ## Deployment
 
-The project is deployed on Netlify. You can visit the live site [here]([<insert-live-site-url>](https://ubiquitous-gelato-53aba5.netlify.app/)).
+The project is deployed on Netlify. You can visit the live site [here](https://ubiquitous-gelato-53aba5.netlify.app/).
 
 ## Features
 
