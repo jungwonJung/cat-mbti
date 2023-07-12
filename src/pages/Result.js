@@ -62,6 +62,7 @@ export default Result;
 
 const Wrapper = styled.div`
   width: 100%;
+  height: 100vh;
   font-family: "Amatic SC";
   font-weight: 400;
   background-color: #fff5e4;
