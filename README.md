@@ -1,6 +1,6 @@
 # Cat MBTI
 
-[Cat MBTI](https://ubiquitous-gelato-53aba5.netlify.app/)
+## [Cat MBTI](https://ubiquitous-gelato-53aba5.netlify.app/)
 
 
 This project is a survey-based recommendation service that suggests cat breeds based on individual personalities, using the MBTI (Myers-Briggs Type Indicator) test as a foundation. By analyzing user traits through a series of 12 questions, the service recommends cats that match their personality.
