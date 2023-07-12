@@ -20,10 +20,29 @@ The project is deployed on Netlify. You can visit the live site [here](<insert-l
 - Personality analysis based on MBTI test
 - Recommendation of cat breeds based on user traits
 
-## Usage
+Getting Started
+---------------
 
-1. Clone the repository:
+To get started with the React-Node Community App, follow the steps below:
 
-   ```bash
-   git clone https://github.com/jungwonJung/cat-mbti.git
+1.  Clone the repository:
+
    ```
+   git clone https://github.com/jungwonJung/React-Node-Community-app.git
+   ```
+
+2.  Install the dependencies:
+
+   ```
+   cd catmbti
+   npm install
+   ```
+
+3.  Start the development server:
+
+   ```
+   npm run start
+   ```
+
+    The application will be accessible at `http://localhost:3000`.
+
