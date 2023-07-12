@@ -98,6 +98,7 @@ const LogoImage = styled.div`
 const Desc = styled.div`
   font-size: 2.5rem;
   margin-top: 20px;
+
   @media (max-width: 768px) {
     font-size: 1.8rem;
   }
