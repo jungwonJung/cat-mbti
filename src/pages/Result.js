@@ -28,11 +28,16 @@ const Result = () => {
       });
   };
 
+  const openAboutMyType = () => {
+    const url = `https://www.simplypsychology.org/${mbti}-personality.html`;
+    window.open(url, "_blank");
+  };
+
   return (
     <Wrapper>
       <Header>Which cat breed is purr-fect for me?</Header>
       <Contents>
-        <Title>My Result</Title>
+        <Title>My Result Type</Title>
         <Info>{mbti}</Info>
         <LogoImage>
           <img
@@ -51,6 +56,9 @@ const Result = () => {
           </StyledButton>
           <StyledButton2 onClick={handleCopyUrl}>
             🐈Share My Result🐈
+          </StyledButton2>
+          <StyledButton2 onClick={openAboutMyType}>
+            ？About My Type？
           </StyledButton2>
         </ButtonGroup>
       </Contents>
