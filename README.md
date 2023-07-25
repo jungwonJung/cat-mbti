@@ -4,6 +4,9 @@
 
 
 This project is a survey-based recommendation service that suggests cat breeds based on individual personalities, using the MBTI (Myers-Briggs Type Indicator) test as a foundation. By analyzing user traits through a series of 12 questions, the service recommends cats that match their personality.
+![cat-mbti](https://github.com/jungwonJung/cat-mbti/assets/63602609/b3bdc4f3-7eb8-4572-83a8-faff85aa1099)
+
+
 
 ## Technologies Used
 
